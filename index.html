@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <!------------------font-style==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@200;500&family=Oswald:wght@200;300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!------------font-kit==============-->
+    <script src="https://kit.fontawesome.com/303732ee6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+    <div class="upper-container">
+        <p> Math Partner</p>
+        <input type="button" id="historyBtn" value="History" onclick="historyButton()">
+        <input type="button" id="savedBtn" value="SAVED SOLUTIONS" onclick="SavedButton()">
+    </div>
+    <div class="historycon">
+        
+    </div>
+
+    <!-- second sstep -->
+    <div class="subContainer">
+    <div class="middle-container">
+        <div class="box1">
+            <label for="problemBar"><h2>Problem</h2></label>
+            <input type="text" id="problemBar" placeholder="TYPE HERE......" >
+        </div>
+
+        <div class="box2">
+            <label for="categoryBar"><h2>select Category</h2></label>
+            <select name="categoryBar" id="categoryBar">
+                <option value="simplify">Simplify</option>
+                <option value="factor">Factor</option>
+                <option value="derive">Derive</option>
+                <option value="integrate">Integrate</option>
+                <option value="zeroes">Find 0's</option>
+                <option value="tangent">Find Tangent</option>
+                <option value="area">Area Under Curve</option>
+                <option value="cos">Cosine</option>
+                <option value="sin">Sine</option>
+                <option value="tan">Tangent</option>
+                <option value="arccos">Inverse Cosine</option>
+                <option value="arcsin">Inverse Sine</option>
+                <option value="arctan">Inverse Tangent</option>
+                <option value="abs">Absolute Value</option>
+                <option value="log">Logarithm</option>
+            </select>
+        </div>
+
+        <div class="box3">
+            <button type="submit" id="searchBtn" onclick="SearchButton()"><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>
+        </div>
+        
+    </div>
+
+
+    <div class="container-input">
+        <div class="inputBox1"></div>
+        <div class="inputBox2"></div>
+ 
+        <button type="reset" id="deleteBtn" onclick="delBtn()"><i class="fa-solid fa-trash-can fa-3x"></i></button>
+    </div>
+    </div>  
+    </div>
+
+    <script src="app.js"></script>
+</body> 
+</html>
